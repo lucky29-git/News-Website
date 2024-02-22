@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newz 24</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    
+    <nav>
+        <div class="main-nav flex container">
+            <a href="#" class="company-logo" onclick="reload()">
+                <img src="./assets/News-logo-new.png" alt="company logo">
+            </a>
+            <div class="nav-links ">
+                <ul class="flex">
+                    <li class="nav-items hover-links" id="science" onclick="onNavItemClick('ipl')">Science</li>
+                    <li class="nav-items hover-links" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="nav-items hover-links" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" placeholder="e.g. Virat kohli" id="search-text">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card-container flex container" id="card-container">
+            
+        </div>
+    </main>
+    
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the news content</h3>
+                <h6 id="news-source" class="news-source">End Gadget 20/20/20</h6>
+                <p  id="news-desc" class="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas reiciendis officiis dolore ea fugit alias nihil vel animi blanditiis molestias.</p>
+            </div>
+        </div>
+    </template>
+    
+</body>
+<script src="./script.js"></script>
+</html>
